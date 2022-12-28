@@ -69,8 +69,8 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		}
 	case m.Content == "help":
 		_, err := s.ChannelMessageSend(m.ChannelID,
-			"```siren ................................... a status check\n"+
-				"help ..................................... this message```\n")
+			"```siren ........... a loud sound to wake sam\n"+
+				"help ........................ this message```\n")
 		if err != nil {
 			fmt.Println("error sending help message:", err)
 			failed(s, m)
